@@ -1,0 +1,78 @@
+/* General styling for the entire page */
+body {
+    margin: 0;
+    font-family: 'Sacramento', cursive;
+    background-color: #ffe6e6; /* Light pink background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container */
+#container {
+    text-align: center;
+}
+
+/* Styling for the image container */
+#image-container {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px; /* Adjust height based on your design */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Styling for the main question */
+#question {
+    font-size: 3em;
+    color: #ff4d4d; /* Darker pink/red color */
+    margin-top: 20px;
+}
+
+/* Styling for the options (buttons) container */
+#options {
+    margin-top: 20px;
+}
+
+/* General button styles */
+button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Styling for the Yes button */
+#yes-button {
+    background-color: #ff9999;
+}
+
+/* Styling for the No button */
+#no-button {
+    background-color: #ff6666;
+}
+
+/* Hover effects for all buttons */
+button:hover {
+    background-color: #ff4d4d; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge button on hover */
+}
+
+/* Fade-in animation for images */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
